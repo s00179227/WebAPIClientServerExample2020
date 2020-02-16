@@ -22,7 +22,7 @@ namespace WebAPIAuthenticationClient
         static public string baseWebAddress = "http://localhost:50574/";
         static public string PlayerToken = "";
         static public AUTHSTATUS PlayerStatus = AUTHSTATUS.NONE;
-        static public string IgdbUserToken = "bc6e414e5d29f9db64cdde70278027d7";
+        static public string IgdbUserToken = "PLACE YOUR IGDB TOKEN HERE";
         static public List<GameScoreObject> getScores(int count, string Game )
             {
             using (var client = new HttpClient())
@@ -43,7 +43,7 @@ namespace WebAPIAuthenticationClient
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 client.DefaultRequestHeaders.Add("user-key", IgdbUserToken);
-                var response = client.GetAsync("https://api-endpoint.igdb.com/games/" + gameID.ToString()).Result;
+                var response = client.GetAsync("https://api-v3.igdb.com/games/" + gameID.ToString()).Result;
                 var resultContent = response.Content.ReadAsAsync<JToken>(
                     new[] { new JsonMediaTypeFormatter() }).Result;
 

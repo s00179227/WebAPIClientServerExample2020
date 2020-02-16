@@ -15,7 +15,7 @@ namespace ConsoleWebAPIClient
         static void Main(string[] args)
         {
             PlayerProfile currentPlayer;
-            
+
             PlayerAuthentication.baseWebAddress = "http://localhost:50574/";
             bool logged = PlayerAuthentication.login("powell.paul@itsligo.ie", "itsPaul$1");
             if (logged)
@@ -27,10 +27,10 @@ namespace ConsoleWebAPIClient
                 {
                     Console.WriteLine("Game {0} {1} Score for {2} is {3}", item.GameId, item.GameName, item.GamerTag, item.score);
                 }
-                if(currentPlayer != null)
+                if (currentPlayer != null)
                 {
                     PlayerAuthentication.PostScore(new PlayerScoreObject
-                        { GameId = scores.First().GameId, PlayerId = currentPlayer.id, score = r.Next(900,1000) });
+                    { GameId = scores.First().GameId, PlayerId = currentPlayer.id, score = r.Next(900, 1000) });
                 }
                 Console.WriteLine("Top 4 scores After New score Added");
                 foreach (var item in PlayerAuthentication.getScores(4, "Battle Call"))
@@ -43,6 +43,7 @@ namespace ConsoleWebAPIClient
             {
                 Console.WriteLine("Failed to acquire Token  ");
             }
+            //PlayerAuthentication.getExtGame(78257);
             Console.ReadKey();
         }
 
