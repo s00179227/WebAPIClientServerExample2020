@@ -1,10 +1,11 @@
-﻿using System;
+﻿using DataClasses;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using WebAPIAuthenticationClient;
 
 namespace ConsoleWebAPIClient
 {
@@ -24,7 +25,7 @@ namespace ConsoleWebAPIClient
                 List<GameScoreObject> scores = PlayerAuthentication.getScores(4, "Battle Call");
                 foreach (var item in scores)
                 {
-                    Console.WriteLine("Game {0} {1} Score for {1} is {3}", item.GameId, item.GameName, item.GamerTag, item.score);
+                    Console.WriteLine("Game {0} {1} Score for {2} is {3}", item.GameId, item.GameName, item.GamerTag, item.score);
                 }
                 if(currentPlayer != null)
                 {
@@ -34,7 +35,7 @@ namespace ConsoleWebAPIClient
                 Console.WriteLine("Top 4 scores After New score Added");
                 foreach (var item in PlayerAuthentication.getScores(4, "Battle Call"))
                 {
-                    Console.WriteLine("After New score Game {0} {1} Score for {1} is {3}", item.GameId, item.GameName, item.GamerTag, item.score);
+                    Console.WriteLine("After New score Game {0} {1} Score for {2} is {3}", item.GameId, item.GameName, item.GamerTag, item.score);
                 }
 
             }

@@ -19,7 +19,7 @@ namespace WebAPIAuthenticationClient
 
     public static class PlayerAuthentication
     {
-        static public string baseWebAddress;
+        static public string baseWebAddress = "http://localhost:50574/";
         static public string PlayerToken = "";
         static public AUTHSTATUS PlayerStatus = AUTHSTATUS.NONE;
         static public string IgdbUserToken = "bc6e414e5d29f9db64cdde70278027d7";

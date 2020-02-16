@@ -61,7 +61,7 @@ namespace DataClasses
     [Serializable]
     public class GameScoreObject
     {
-        public string GameId { get; set; }
+        public int GameId { get; set; }
 
         public string GameName { get; set; }
 

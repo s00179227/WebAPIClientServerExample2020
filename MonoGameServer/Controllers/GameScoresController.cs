@@ -28,7 +28,10 @@ namespace MonoGameServer.Controllers
                      on scores.PlayerID equals players.Id
                      where scores.GameID == g.GameID
                      orderby scores.score descending
-                     select new { g.GameID, g.GameName, players.GamerTag, scores.score })
+                     select new GameScoreObject { 
+                         GameId = g.GameID, 
+                         GameName = g.GameName, 
+                         GamerTag = players.GamerTag, score = scores.score })
                      .Take(Count).ToList();
             }
 
