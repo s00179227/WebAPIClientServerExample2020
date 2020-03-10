@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MonoGameServer.Models
+namespace cgMonoGameServer2015.Models
 {
     // Models returned by AccountController actions.
 

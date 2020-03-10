@@ -11,10 +11,10 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
-using MonoGameServer.Areas.HelpPage.ModelDescriptions;
-using MonoGameServer.Areas.HelpPage.Models;
+using cgMonoGameServer2015.Areas.HelpPage.ModelDescriptions;
+using cgMonoGameServer2015.Areas.HelpPage.Models;
 
-namespace MonoGameServer.Areas.HelpPage
+namespace cgMonoGameServer2015.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {

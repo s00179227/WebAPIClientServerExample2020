@@ -8,10 +8,10 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
-using MonoGameServer.Providers;
-using MonoGameServer.Models;
+using cgMonoGameServer2015.Providers;
+using cgMonoGameServer2015.Models;
 
-namespace MonoGameServer
+namespace cgMonoGameServer2015
 {
     public partial class Startup
     {

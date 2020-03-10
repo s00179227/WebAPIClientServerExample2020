@@ -2,7 +2,7 @@
 using System.Web.Http;
 using System.Web.Http.Cors;
 
-namespace MonoGameServer.Controllers
+namespace cgMonoGameServer2015.Controllers
 {
     //[EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
     public class ValuesController : ApiController

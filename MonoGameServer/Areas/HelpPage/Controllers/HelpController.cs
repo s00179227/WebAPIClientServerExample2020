@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using MonoGameServer.Areas.HelpPage.ModelDescriptions;
-using MonoGameServer.Areas.HelpPage.Models;
+using cgMonoGameServer2015.Areas.HelpPage.ModelDescriptions;
+using cgMonoGameServer2015.Areas.HelpPage.Models;
 
-namespace MonoGameServer.Areas.HelpPage.Controllers
+namespace cgMonoGameServer2015.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

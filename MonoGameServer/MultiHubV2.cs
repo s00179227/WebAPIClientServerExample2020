@@ -6,7 +6,7 @@ using Microsoft.AspNet.SignalR;
 using DataClasses;
 using System.Threading.Tasks;
 
-namespace MonoGameServer
+namespace cgMonoGameServer2015
 {
 
     public static class Player

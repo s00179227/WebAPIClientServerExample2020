@@ -1,6 +1,6 @@
 using System.Collections.ObjectModel;
 
-namespace MonoGameServer.Areas.HelpPage.ModelDescriptions
+namespace cgMonoGameServer2015.Areas.HelpPage.ModelDescriptions
 {
     public class ComplexTypeModelDescription : ModelDescription
     {

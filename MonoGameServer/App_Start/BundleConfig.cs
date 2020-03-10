@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace MonoGameServer
+namespace cgMonoGameServer2015
 {
     public class BundleConfig
     {

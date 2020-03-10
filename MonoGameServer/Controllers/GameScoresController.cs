@@ -1,4 +1,4 @@
-﻿using MonoGameServer.Models;
+﻿using cgMonoGameServer2015.Models;
 using DataClasses;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 
-namespace MonoGameServer.Controllers
+namespace cgMonoGameServer2015.Controllers
 {
     [RoutePrefix("api/GameScores")]
     public class GameScoresController : ApiController
@@ -28,10 +28,7 @@ namespace MonoGameServer.Controllers
                      on scores.PlayerID equals players.Id
                      where scores.GameID == g.GameID
                      orderby scores.score descending
-                     select new GameScoreObject { 
-                         GameId = g.GameID, 
-                         GameName = g.GameName, 
-                         GamerTag = players.GamerTag, score = scores.score })
+                     select new { g.GameID, g.GameName, players.GamerTag, scores.score })
                      .Take(Count).ToList();
             }
 

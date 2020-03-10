@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using Microsoft.AspNet.SignalR;
 
-namespace MonoGameServer
+namespace cgMonoGameServer2015
 {
     public class ChatHub : Hub
     {

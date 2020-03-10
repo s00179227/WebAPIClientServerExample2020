@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace MonoGameServer.Areas.HelpPage.ModelDescriptions
+namespace cgMonoGameServer2015.Areas.HelpPage.ModelDescriptions
 {
     internal static class ModelNameHelper
     {

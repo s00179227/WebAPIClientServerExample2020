@@ -1,4 +1,4 @@
-namespace MonoGameServer.Migrations
+namespace cgMonoGameServer2015.Migrations
 {
     using System;
     using System.Data.Entity;
@@ -8,12 +8,12 @@ namespace MonoGameServer.Migrations
     using Microsoft.AspNet.Identity;
     using System.Collections.Generic;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<MonoGameServer.Models.ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<cgMonoGameServer2015.Models.ApplicationDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
-            ContextKey = "MonoGameServer.Models.ApplicationDbContext";
+            ContextKey = "cgMonoGameServer2015.Models.ApplicationDbContext";
         }
         int _usercounter = 0;
         public int Counter { get { return ++_usercounter; } }
@@ -25,7 +25,7 @@ namespace MonoGameServer.Migrations
         public int PassCounter { get { return ++_passCounter; } }
 
 
-        protected override void Seed(MonoGameServer.Models.ApplicationDbContext context)
+        protected override void Seed(cgMonoGameServer2015.Models.ApplicationDbContext context)
         {
 
             //  This method will be called after migrating to the latest version.

@@ -4,9 +4,9 @@ using System.Linq;
 using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartup(typeof(MonoGameServer.Startup))]
+[assembly: OwinStartup(typeof(cgMonoGameServer2015.Startup))]
 
-namespace MonoGameServer
+namespace cgMonoGameServer2015
 {
     public partial class Startup
     {

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace MonoGameServer
+namespace cgMonoGameServer2015
 {
     public class RouteConfig
     {

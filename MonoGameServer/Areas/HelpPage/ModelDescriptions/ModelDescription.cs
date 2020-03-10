@@ -1,6 +1,6 @@
 using System;
 
-namespace MonoGameServer.Areas.HelpPage.ModelDescriptions
+namespace cgMonoGameServer2015.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Describes a type model.

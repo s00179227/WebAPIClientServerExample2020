@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
-namespace MonoGameServer.Models
+namespace cgMonoGameServer2015.Models
 {
     // Models used as parameters to AccountController actions.
 

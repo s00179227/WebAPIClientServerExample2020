@@ -6,7 +6,7 @@ using Microsoft.AspNet.SignalR;
 using Microsoft.Xna.Framework;
 using System.Timers;
 
-namespace MonoGameServer
+namespace cgMonoGameServer2015
 {
     public class MoveCharacterHub : Hub
     {

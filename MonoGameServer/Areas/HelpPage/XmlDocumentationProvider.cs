@@ -5,9 +5,9 @@ using System.Reflection;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
 using System.Xml.XPath;
-using MonoGameServer.Areas.HelpPage.ModelDescriptions;
+using cgMonoGameServer2015.Areas.HelpPage.ModelDescriptions;
 
-namespace MonoGameServer.Areas.HelpPage
+namespace cgMonoGameServer2015.Areas.HelpPage
 {
     /// <summary>
     /// A custom <see cref="IDocumentationProvider"/> that reads the API documentation from an XML documentation file.

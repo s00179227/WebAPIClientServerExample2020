@@ -13,11 +13,11 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using MonoGameServer.Models;
-using MonoGameServer.Providers;
-using MonoGameServer.Results;
+using cgMonoGameServer2015.Models;
+using cgMonoGameServer2015.Providers;
+using cgMonoGameServer2015.Results;
 
-namespace MonoGameServer.Controllers
+namespace cgMonoGameServer2015.Controllers
 {
     [Authorize]
     [RoutePrefix("api/Account")]

@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29709.97
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGameServer", "MonoGameServer\MonoGameServer.csproj", "{1AFD40C2-F48D-41A0-B140-B03F62FC5B8B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataClasses", "DataClasses\DataClasses.csproj", "{7F669265-A6D5-474B-A54A-26E55155D8C6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLWebAPIClient", "CLWebAPIClient\CLWebAPIClient.csproj", "{177228DC-9378-45E5-9777-C6E8E18C250E}"
@@ -13,16 +11,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleWebAPIClient", "Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfClient", "WpfClient\WpfClient.csproj", "{846BF035-153C-483D-9169-7A892289B332}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGameServer", "MonoGameServer\MonoGameServer.csproj", "{1AFD40C2-F48D-41A0-B140-B03F62FC5B8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1AFD40C2-F48D-41A0-B140-B03F62FC5B8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1AFD40C2-F48D-41A0-B140-B03F62FC5B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1AFD40C2-F48D-41A0-B140-B03F62FC5B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1AFD40C2-F48D-41A0-B140-B03F62FC5B8B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7F669265-A6D5-474B-A54A-26E55155D8C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7F669265-A6D5-474B-A54A-26E55155D8C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F669265-A6D5-474B-A54A-26E55155D8C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{846BF035-153C-483D-9169-7A892289B332}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{846BF035-153C-483D-9169-7A892289B332}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{846BF035-153C-483D-9169-7A892289B332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AFD40C2-F48D-41A0-B140-B03F62FC5B8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AFD40C2-F48D-41A0-B140-B03F62FC5B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AFD40C2-F48D-41A0-B140-B03F62FC5B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AFD40C2-F48D-41A0-B140-B03F62FC5B8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

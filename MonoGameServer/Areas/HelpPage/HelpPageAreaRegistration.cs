@@ -1,7 +1,7 @@
 using System.Web.Http;
 using System.Web.Mvc;
 
-namespace MonoGameServer.Areas.HelpPage
+namespace cgMonoGameServer2015.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {

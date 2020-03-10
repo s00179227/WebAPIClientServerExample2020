@@ -1,4 +1,4 @@
-namespace MonoGameServer.Migrations
+namespace cgMonoGameServer2015.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

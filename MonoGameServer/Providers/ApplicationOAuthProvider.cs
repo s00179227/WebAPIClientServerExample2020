@@ -9,11 +9,11 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using MonoGameServer.Models;
+using cgMonoGameServer2015.Models;
 using Microsoft.Owin;
 using System.Configuration;
 
-namespace MonoGameServer.Providers
+namespace cgMonoGameServer2015.Providers
 {
     public class ApplicationOAuthProvider : OAuthAuthorizationServerProvider
     {
