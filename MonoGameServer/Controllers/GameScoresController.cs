@@ -18,11 +18,11 @@ namespace cgMonoGameServer2015.Controllers
         {
             using (ApplicationDbContext db = new ApplicationDbContext())
             {
-                Game g = db.Games.FirstOrDefault(game => game.GameName == gameName);
+                Game g = db.Games.Include("scores").FirstOrDefault(game => game.GameName == gameName);
                 if (g == null)
                     return BadRequest("Game does not exist");
-
-                return 
+                List<GameScoreObject> GameScores = new List<GameScoreObject>();
+                var gameScores =  
                     (from scores in db.GameScores
                      join players in db.Users
                      on scores.PlayerID equals players.Id
@@ -30,6 +30,17 @@ namespace cgMonoGameServer2015.Controllers
                      orderby scores.score descending
                      select new { g.GameID, g.GameName, players.GamerTag, scores.score })
                      .Take(Count).ToList();
+                foreach (var item in gameScores)
+                {
+                    GameScores.Add(new GameScoreObject
+                    {
+                        GameId = item.GameID,
+                        GameName = item.GameName,
+                        GamerTag = item.GamerTag,
+                        score = item.score
+                    });
+                }
+                return GameScores;
             }
 
         }
